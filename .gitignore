@@ -2,14 +2,16 @@
 
 # dependencies
 /node_modules
-functions/node_modules
-.firebase
+/functions/node_modules
+/.firebase
+src/config/fbConfig.js
 
 # testing
 /coverage
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
