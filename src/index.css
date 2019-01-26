@@ -1,0 +1,246 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif;
+  min-height: 100%;
+  background: #f5f4f6 center no-repeat;
+}
+
+body.has-fixed-sidenav {
+  padding-left: 300px;
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%
+  }
+}
+@media only screen and (max-width : 992px) {
+  body.has-fixed-sidenav {
+    padding-left: 0;
+  }
+}
+
+.modal {
+  display: unset !important;
+  top: 20vh;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background: rgba(0, 0, 0, 0.75) !important;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form {
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.card, .radius {
+  border-radius: 6px !important;
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+}
+
+.card .row {
+  margin-bottom: 0;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidenav .user-view .circle {
+  background: rgba(255,255,255,0.7);
+  text-align: center;
+  line-height: 64px;
+  font-size: 25px;
+}
+
+.sidenav li a.active {
+  background-color: rgba(0,0,0,0.05) ;
+}
+
+.sidenav .divider {
+  background: rgba(0, 0, 0, 0.15);
+  margin: 4px 0
+}
+
+.brand-logo span {
+  font-weight: bold;
+}
+
+.brand-logo {
+  font-weight: 200;
+}
+
+ul#slide-out {
+  background: linear-gradient(to bottom,#ff9966,#ff5e62);
+}
+
+.notifications li {
+  padding: 10px 0;
+}
+
+.status-new:after         { color: #03A9F4; content: "\f005"; font-weight: 400; }
+.status-ongoing:after     { color: #FF9800; content: "\f086"; font-weight: 400; }
+.status-error:after       { color: #F44336; content: "\f12a"; font-weight: 900; }
+.status-completed:after   { color: #8BC34A; content: "\f00c"; font-weight: 900; }
+
+.status-icon {
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-summary:not(:last-of-type) {
+  border-bottom: 1px solid whitesmoke;
+}
+.project-summary .row {  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project-summary .card-title, .edit-project {margin: 0 !important;}
+
+.card-user-head {
+  padding: 20px;
+  background: rgba(255, 153, 102, .5);
+  display: flex;
+  justify-content: center;
+}
+
+.card-initials {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: white;
+  color: gray;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.center-align .card-initials {
+  margin: auto
+}
+
+.project-details .col.s12.m2 {
+  padding: .75rem
+}
+
+.card-user-head .btn-floating i {
+  font-size: 16px;
+  margin: 0 0 0 2px;
+}
+
+.user-info__item {
+  padding: 5px 0;
+  color: #616161;
+}
+
+.user-info__icon {
+  color: rgba(255, 153, 102, 1);
+  background: whitesmoke;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.user-info__list {
+  margin-bottom: 0;
+}
+
+.notification__icon {
+  color: rgba(255, 153, 102, 1);
+  display: flex;
+  width: 44px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.notifications li {
+  display: flex;
+}
+
+.notification__icon i {
+  background: #f5f4f6;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+.notification__icon:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  height: calc(100% + 20px);
+  width: 4px;
+  left: calc(50% - 2px);
+  background: #f5f4f6;
+  z-index: 1;
+}
+
+.pagination li i {
+  font-size: 15px;
+}
+
+
+.user-badges {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.user-badges * {
+  line-height: initial;
+}
+
+.user-badges__icon {
+  font-size: 12px;
+  color: white;
+}
+
+.user-badges__item {
+  width: 22px;
+  height: 22px;
+  line-height: 8px;
+  border-radius: 11px;
+  background: #667d99;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-left: -10px;
+}
+
+.collapsible-project-title {
+  font-size: 25px;
+  flex: 1;
+  font-weight: 300;
+}
+
+.collapsible-header {align-items: center;}
+.radius li:last-child .collapsible-header {
+  border: none;
+}
